@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Consulta Fácil</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Estilo.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.PI-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.PI-half img:hover{opacity:1}
+</style>
+<body>
+
+
+<nav class="PI-sidebar PI-red PI-collapse PI-top PI-large PI-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <div class="PI-container">
+    <h3 class="PI-padding-64"><a href="#"><img src="images/logo.jpg" style="width: : 150px;height:  75px; border-radius: 15px;"></a></h3>
+  </div>
+  <div class="PI-bar-block">
+    <a href="#" style="border-radius: 10px;" onclick="fecha()" class="PI-bar-item PI-button PI-hover-white">Home</a> 
+    <a href="#showcase" style="border-radius: 10px;" onclick="fecha()" class="PI-bar-item PI-button PI-hover-white">Diagnósticos</a> 
+    <a href="#services" style="border-radius: 10px;"  onclick="fecha()" class="PI-bar-item PI-button PI-hover-white">Agendamento</a> 
+    <a href="#designers" style="border-radius: 10px;" onclick="fecha()" class="PI-bar-item PI-button PI-hover-white">Resultados</a> 
+    <a href="#packages" style="border-radius: 10px;" onclick="fecha()" class="PI-bar-item PI-button PI-hover-white">Login</a> 
+    <a href="#contact" style="border-radius: 10px;" onclick="fecha()" class="PI-bar-item PI-button PI-hover-white">Contato</a>
+  </div>
+</nav>
+
+
+<header class="PI-container PI-top PI-hide-large PI-red PI-xlarge PI-padding">
+  <a href="javascript:void(0)" class="PI-button PI-red PI-margin-right" onclick="abre()">☰</a>
+  <span>Consulta Fácil</span>
+</header>
+
+
+<div class="PI-overlay PI-hide-large" onclick="fecha()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="PI-main" style="margin-left:340px;margin-right:40px">
+
+  
+  <div class="PI-container" style="margin-top:80px" id="showcase">
+    <h1 class="PI-jumbo"><b>Agende a Sua Consulta</b></h1>
+    <h1 class="PI-xxxlarge PI-text-red"><b>Horários</b></h1>
+    <hr style="width:50px;border:5px solid cyan" class="PI-round">
+  </div>
+  
+  
+  <div class="">
+                  <div class="appointment-form">
+                     <h3><span>+</span> Agendamentos</h3>
+                     <div class="form">
+                        <form action="index.html">
+                           <fieldset>
+                              <div >
+                                 <div class="row">
+                                    <div class="form-group">
+                                       <input type="text" id="name" placeholder="Seu Nome" id="nome" />
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="">
+                                 <div class="row">
+                                    <div class="form-group">
+                                       <input type="email" placeholder="Email" id="email" />
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="">
+                                 <div class="row">
+                                    <div class="form-group">
+                                       <select class="form-control">
+                                          <option>Dia</option>
+                                          <option>Segunda</option>
+                                          <option>Terça</option>
+                                          <option>Quarta</option>
+                                          <option>Quinta</option>
+                                          <option>Sexta</option>
+                                          <option>Sábado</option>
+                                          <option>Domingo</option>
+                                       </select>
+                                    </div>
+                                    <div class="form-group" type="time">
+                                       <select class="form-control">
+                                          <option>Hora</option>
+                                          <option>7:00</option>
+                                          <option>7:30</option>
+                                          <option>8:00</option>
+                                          <option>8:30</option>
+                                          <option>9:00</option>
+                                          <option>9:30</option>
+                                          <option>10:00</option>
+                                          <option>10:30</option>
+                                          <option>13:00</option>
+                                          <option>13:30</option>
+                                          <option>14:00</option>
+                                          <option>14:30</option>
+                                          <option>16:00</option>
+                                          <option>16:30</option>
+                                          <option>17:00</option>
+                                          <option>17:30</option>
+                                          
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="">
+                                 <div class="row">
+                                    <div class="form-group">
+                                       <select class="form-control">
+                                          <option>Médico</option>
+                                          <option>Dr. Mauro</option>
+                                          <option>Dra. Sandra</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="">
+                                 <div class="row">
+                                    <div class="form-group">
+                                       <textarea rows="4" id="textarea_message" class="form-control" placeholder="Your Message..."></textarea>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="">
+                                 <div class="row">
+                                    <div class="form-group">
+                                       <div class="center"><button type="submit">Enviar</button></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </fieldset>
+                        </form>
+
+
+<div class="PI-light-grey PI-container PI-padding-32" style="margin-top:75px;padding-right:58px"><p class="PI-right">Criado por <a href ="" title="PI.CSS" target="_blank" class="PI-hover-opacity">Alunos 3° </a></p></div>
+
+<script>
+
+function abre() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function fecha() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+
+</body>
+</html>
